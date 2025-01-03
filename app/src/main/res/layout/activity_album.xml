@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:forceDarkAllowed="true"
+    tools:context=".AlbumActivity">
+
+    <TextView
+        android:id="@+id/AlbumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#C86DB2"
+        android:backgroundTint="#FEC9F1"
+        android:fontFamily="serif-monospace"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/addPhotoButton"
+        android:layout_width="111dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="448dp"
+        android:backgroundTint="#C86DB2"
+        android:fontFamily="serif-monospace"
+        android:onClick="addPhotoToApp"
+        android:text="Add Photo"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/slideshowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="448dp"
+        android:backgroundTint="#C86DB2"
+        android:fontFamily="serif-monospace"
+        android:onClick="changeToSlideshowActivity"
+        android:text="Display/Edit"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@id/addPhotoButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/removePhotoFromAppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="448dp"
+        android:backgroundTint="#C86DB2"
+        android:fontFamily="serif-monospace"
+        android:onClick="removePhotoFromApp"
+        android:text="Remove Photo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@id/slideshowButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65px"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/imageList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="#FEC9F1"
+            android:fontFamily="serif-monospace"
+            android:text="Image"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="#FEC9F1"
+            android:fontFamily="serif-monospace"
+            android:text="Photo Location"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="415dp"
+        android:layout_height="436dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AlbumName"
+        app:layout_constraintVertical_bias="0.06"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <TableLayout
+            android:id="@+id/entryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:backgroundTint="#000000"
+            android:orientation="horizontal">
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

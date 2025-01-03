@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/removeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif-monospace"
+        android:text="Remove"
+        android:textAllCaps="true"
+        android:textColor="#C86DB2"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/removeAlbumName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FEC9F1"
+        android:backgroundTint="#FEC9F1"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/removeAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="#C86DB2"
+        android:fontFamily="serif-monospace"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+</LinearLayout>
+

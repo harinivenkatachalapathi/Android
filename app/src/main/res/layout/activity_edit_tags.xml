@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_vertical"
+            android:text="Location Preference"
+            android:textColor="#C86DB2" />
+
+        <Button
+            android:id="@+id/addLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C86DB2"
+            android:fontFamily="serif-monospace"
+            android:text="Add Location"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/removeLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C86DB2"
+            android:fontFamily="serif-monospace"
+            android:text="Remove Location"
+            android:textColor="#FFFFFF" />
+
+        <ListView
+            android:id="@+id/locations"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_marginTop="10dip"
+            android:background="#FEC9F1"></ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dip"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_vertical"
+            android:text="Person Preference"
+            android:textColor="#C86DB2" />
+
+        <Button
+            android:id="@+id/addPersonButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C86DB2"
+            android:fontFamily="serif-monospace"
+            android:text="Add Person"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/removePersonButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C86DB2"
+            android:fontFamily="serif-monospace"
+            android:text="Remove Person"
+            android:textColor="#FFFFFF" />
+
+        <ListView
+            android:id="@+id/persons"
+            android:layout_width="match_parent"
+            android:layout_height="201dp"
+            android:layout_marginTop="10dip"
+            android:background="#FEC9F1"></ListView>
+    </LinearLayout>
+</ScrollView>

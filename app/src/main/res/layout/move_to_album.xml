@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif-monospace"
+        android:text="Move to Album"
+        android:textColor="#C86DB2"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editAlbumName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FEC9F1"
+        android:backgroundTint="#FEC9F1"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="Album Name"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/AddAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="#C86DB2"
+        android:fontFamily="serif-monospace"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+</LinearLayout>
